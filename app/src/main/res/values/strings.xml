@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CONTACT_APPLICATION</string>
+    <string name="hint_profile_name">ENTER NAME</string>
+    <string name="autofill_hint">Enter field info</string>
+</resources>

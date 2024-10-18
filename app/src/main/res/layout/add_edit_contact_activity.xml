@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <!-- IMAGE FOR USER IMAGE INPUT-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileImage"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_account_circle_24"
+            app:civ_border_color="@color/colorTextPrimary"
+            app:civ_border_width="1sp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <!-- EDIT TEXT FOR USER NAME INPUT-->
+        <EditText
+            android:id="@+id/ProfileName"
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:autofillHints="@string/autofill_hint"
+            android:background="@drawable/input_field"
+            android:drawableStart="@drawable/baseline_create_24"
+            android:hint="@string/hint_profile_name"
+            android:layout_marginBottom="20sp"
+            android:inputType="text"
+            android:textColorHint="@color/White"
+            android:textSize="12sp">
+        </EditText>
+
+
+        <!-- EDIT TEXT FOR USER EMAIL INPUT-->
+        <EditText
+            android:id="@+id/ProfileEmail"
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:autofillHints="@string/autofill_hint"
+            android:background="@drawable/input_field"
+            android:drawableStart="@drawable/baseline_create_24"
+            android:hint="ENTER EMAIL"
+            android:layout_marginBottom="20sp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/White"
+            android:textSize="12sp">
+
+        </EditText>
+
+        <!-- EDIT TEXT FOR USER phone INPUT-->
+        <EditText
+            android:id="@+id/ProfileNumber"
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="20sp"
+            android:autofillHints="@string/autofill_hint"
+            android:background="@drawable/input_field"
+            android:drawableStart="@drawable/baseline_create_24"
+            android:hint ="ENTER PHONE NUMBER"
+            android:inputType="phone"
+            android:textColorHint="@color/White"
+            android:textSize="12sp">
+        </EditText>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="@color/colorTextPrimary"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_add_circle_outline_24"
+        android:tint="@color/colorThemeExtra">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

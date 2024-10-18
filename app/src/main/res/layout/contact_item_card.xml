@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondary"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/colorSecondary"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/CImage"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_account_circle_24"
+            android:contentDescription="Profile1"
+            app:civ_border_color="@color/White"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="100sp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:layout_toEndOf="@+id/CImage"
+            android:id="@+id/ClassicProfImage"
+            android:layout_toRightOf="@id/CImage"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/Cname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toEndOf="@id/ClassicProfImage"
+            android:text="Contact Name"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/Ccall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10sp"
+            android:contentDescription="Call"
+            android:src="@drawable/baseline_call_24"
+            app:tint="@color/colorTextPrimary" />
+
+        <ImageButton
+            android:id="@+id/Cedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="94dp"
+            android:layout_marginBottom="34dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Edit"
+            android:src="@drawable/baseline_edit_24"
+            app:tint="@color/colorTextPrimary" />
+
+        <ImageButton
+            android:id="@+id/Cdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="28dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Delete"
+            android:src="@drawable/baseline_delete_24"
+            app:tint="@color/colorTextPrimary" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

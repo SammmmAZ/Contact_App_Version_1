@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CONTACT_APPLICATION" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="cardBackgroundColor">@color/colorThemeExtra</item>
+    </style>
+
+    <style name="Theme.CONTACT_APPLICATION" parent="Base.Theme.CONTACT_APPLICATION">
+        <!-- Additional style customization can be done here if needed -->
+    </style>
+</resources>

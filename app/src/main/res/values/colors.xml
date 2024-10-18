@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Defines color resource for styles or themes in themes xml-->
+    <color name="colorPrimary">#FF095256</color>
+    <color name="colorSecondary">#FF087F8C</color>
+    <color name="colorTextPrimary">#FF5AAA95</color>
+    <color name="colorTextSecondary">#FF86A873</color>
+    <color name="colorThemeExtra">#FFBB9F06</color>
+
+    <color name="White">#FFFFFF</color>
+</resources>
